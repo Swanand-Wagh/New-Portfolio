@@ -1,0 +1,40 @@
+import { CareerProps } from '../types/careers';
+
+export const CAREERS: CareerProps[] = [
+  {
+    position: 'Software Developer Intern',
+    company: '(INTL FCStone) StoneX Inc.',
+    logo: '/images/careers/stonex.webp',
+    location: 'Pune',
+    location_type: 'Hybrid',
+    type: 'Internship',
+    start_date: '2023-02',
+    end_date: '2023-08',
+    industry: 'payments',
+    link: 'https://www.stonex.com/',
+  },
+  {
+    position: 'Web Developer Intern',
+    company: 'FairShare IT Services',
+    logo: '/images/careers/fairshare.jpg',
+    location: 'Pune',
+    location_type: 'Remote',
+    type: 'Internship',
+    start_date: '2021-09',
+    end_date: '2021-12',
+    industry: 'software',
+    link: 'https://sirka.io',
+  },
+  {
+    position: 'Co-Founder & CTO',
+    company: 'SayItSocial PVT. LTD.',
+    logo: '/images/careers/sayitsocial.svg',
+    location: 'Pune',
+    location_type: 'Remote',
+    type: 'Fulltime',
+    start_date: '2019-06',
+    end_date: '2021-09',
+    industry: 'philo-tech',
+    link: '#',
+  },
+];
