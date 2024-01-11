@@ -18,7 +18,7 @@ export const getAccessToken = async (): Promise<string> => {
       grant_type: 'refresh_token',
       client_id: CLIENT_ID,
       client_secret: CLIENT_SECRET,
-      refresh_token: REFRESH_TOKEN,
+      // refresh_token: REFRESH_TOKEN,
     }),
     {
       headers: {

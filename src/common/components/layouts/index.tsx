@@ -2,17 +2,11 @@ import clsx from 'clsx';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import { ReactNode } from 'react';
-import { useWindowSize } from 'usehooks-ts';
 
 import useHasMounted from '@/common/hooks/useHasMounted';
-import ChatButton from '@/modules/chat/components/ChatButton';
 
 import HeaderSidebar from './header/HeaderSidebar';
 import HeaderTop from './header/HeaderTop';
-import NowPlayingBar from '../elements/NowPlayingBar';
-import NowPlayingCard from '../elements/NowPlayingCard';
-
-// import TopBar from '../elements/TopBar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -21,8 +15,6 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const { resolvedTheme } = useTheme();
   const hasMounted = useHasMounted();
-  const { width } = useWindowSize();
-  const isMobile = width < 480;
 
   const isDarkTheme =
     hasMounted && (resolvedTheme === 'dark' || resolvedTheme === 'system');
@@ -36,11 +28,8 @@ const Layout = ({ children }: LayoutProps) => {
     router.pathname.startsWith('/blog/') ||
     router.pathname.startsWith('/learn/');
 
-  const isShowChatButton = pageName !== 'guestbook';
-
   return (
     <>
-      {/* <TopBar /> */}
       <div
         className={clsx(
           'max-w-6xl mx-auto lg:px-8',
@@ -61,8 +50,6 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
         )}
       </div>
-      {isShowChatButton && <ChatButton />}
-      {isMobile ? <NowPlayingCard /> : <NowPlayingBar />}
     </>
   );
 };
