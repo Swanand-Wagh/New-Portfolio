@@ -44,7 +44,7 @@ export const PROJECTSLIST: ProjectsProps = {
       title: 'Shot Boundary Detection System',
       slug: 'shot-boundary-detection-system',
       description:
-        'The system retrieves images using the Relevance Feedback, Color Code, and Intensity algorithms.',
+        'Shot Boundary Detection System using Twin-comparison based approach, detecting cuts and gradual transitions in a video.',
       image: '/images/projects/shotboundarysystem.jpg',
       link_demo: 'https://shot-boundary-system.vercel.app/',
       link_github: 'https://github.com/Swanand-Wagh/Shot-Boundary-System',
