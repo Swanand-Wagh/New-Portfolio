@@ -5,7 +5,7 @@ export interface ProjectItemProps {
   image: string;
   link_demo?: string;
   link_github?: string;
-  stacks: string;
+  stacks: string[];
   content?: string;
   is_show: boolean;
   is_featured: boolean;

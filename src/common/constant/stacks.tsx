@@ -26,6 +26,11 @@ import {
   SiPython,
   SiSolidity,
   SiUnity,
+  SiMantine,
+  SiKubernetes,
+  SiSass,
+  SiCsharp,
+  SiIpfs,
 } from 'react-icons/si';
 
 export type stacksProps = {
@@ -35,6 +40,11 @@ export type stacksProps = {
 const iconSize = 24;
 
 export const STACKS: stacksProps = {
+  IPFS: <SiIpfs size={iconSize} className='text-teal-400' />,
+  'C#': <SiCsharp size={iconSize} className='text-purple-700' />,
+  SCSS: <SiSass size={iconSize} className='text-pink-500' />,
+  Kubernetes: <SiKubernetes size={iconSize} className='text-blue-600' />,
+  Mantine: <SiMantine size={iconSize} className='text-teal-500' />,
   HTML5: <SiHtml5 size={iconSize} className='text-orange-500' />,
   Java: <FaJava size={iconSize} className='text-red-600' />,
   MySQL: <SiMysql size={iconSize} className='text-blue-500' />,

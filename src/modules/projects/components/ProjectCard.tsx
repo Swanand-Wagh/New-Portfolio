@@ -10,16 +10,15 @@ import { ProjectItemProps } from '@/common/types/projects';
 
 const ProjectCard = ({
   title,
-  slug,
   description,
   image,
   stacks,
   is_featured,
+  link_demo,
+  link_github,
 }: ProjectItemProps) => {
-  const stacksArray = JSON.parse(stacks);
-
   return (
-    <Link href={`/projects/${slug}`}>
+    <Link target='_blank' href={link_github || link_demo || '#'}>
       <Card className='group relative border border-neutral-200 dark:border-neutral-900 lg:hover:scale-[102%] cursor-pointer'>
         {is_featured && (
           <div className='flex items-center gap-1 absolute top-0 right-0 bg-lime-300 text-emerald-950 text-[13px] font-medium py-1 px-2 rounded-bl-xl rounded-tr-xl z-[2]'>
@@ -50,7 +49,7 @@ const ProjectCard = ({
             {description}
           </p>
           <div className='flex flex-wrap items-center gap-3 pt-2'>
-            {stacksArray?.map((stack: string, index: number) => (
+            {stacks?.map((stack: string, index: number) => (
               <div key={index}>
                 <Tooltip title={stack}>{STACKS[stack]}</Tooltip>
               </div>
