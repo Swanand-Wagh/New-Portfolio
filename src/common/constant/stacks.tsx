@@ -18,6 +18,7 @@ import {
   SiWebpack,
   SiWordpress,
   SiHtml5,
+  SiSpring,
   SiMysql,
   SiMongodb,
   SiAzuredevops,
@@ -31,6 +32,7 @@ import {
   SiSass,
   SiCsharp,
   SiIpfs,
+  SiOpenai,
 } from 'react-icons/si';
 
 export type stacksProps = {
@@ -40,6 +42,8 @@ export type stacksProps = {
 const iconSize = 24;
 
 export const STACKS: stacksProps = {
+  OpenAI: <SiOpenai size={iconSize} className='text-black-600' />,
+  Spring: <SiSpring size={iconSize} className='text-green-600' />,
   IPFS: <SiIpfs size={iconSize} className='text-teal-400' />,
   'C#': <SiCsharp size={iconSize} className='text-purple-700' />,
   SCSS: <SiSass size={iconSize} className='text-pink-500' />,

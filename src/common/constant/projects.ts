@@ -3,6 +3,28 @@ import { ProjectsProps, ProjectItemProps } from '../types/projects';
 export const PROJECTSLIST: ProjectsProps = {
   projects: [
     {
+      title: 'Socraitive - Smart AI Teacher',
+      slug: 'socraitive',
+      description:
+        'AI-powered knowledge testing platform with interactive dialogue, personalized testing, and deep learning experiences for students.',
+      image: '/images/projects/socraitive.jpg',
+      link_demo: 'https://uwb-hacks.vercel.app/',
+      link_github: 'https://github.com/trollLemon/UWBhacksAI2024',
+      stacks: [
+        'React.js',
+        'Vite',
+        'JavaScript',
+        'Java',
+        'Spring',
+        'Azure',
+        'OpenAI',
+      ],
+      content: '',
+      is_show: true,
+      is_featured: true,
+      updated_at: new Date(),
+    },
+    {
       title: 'Greenie - BGV Startup',
       slug: 'greenie',
       description:
@@ -37,7 +59,7 @@ export const PROJECTSLIST: ProjectsProps = {
       stacks: ['Unity3D', 'C#'],
       content: '',
       is_show: true,
-      is_featured: true,
+      is_featured: false,
       updated_at: new Date(),
     },
     {
