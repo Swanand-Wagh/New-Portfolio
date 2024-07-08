@@ -9,7 +9,7 @@ import EducationCard from './EducationCard';
 const EducationList = () => {
   return (
     <section className='space-y-6'>
-      <div className='space-y-2'>
+      {/* <div className='space-y-2'>
         <SectionHeading
           title='Education'
           icon={<EducationIcon size={22} className='mr-1' />}
@@ -17,7 +17,7 @@ const EducationList = () => {
         <SectionSubHeading>
           <p className='dark:text-neutral-400'>My educational journey.</p>
         </SectionSubHeading>
-      </div>
+      </div> */}
 
       <div className='grid md:grid-cols-1 gap-4'>
         {EDUCATION?.map((item, index) => (
