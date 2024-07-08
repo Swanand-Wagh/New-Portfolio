@@ -46,15 +46,6 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
-    title: 'Dashboard',
-    href: '/dashboard',
-    icon: <DashboardIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Dashboard',
-    type: 'Pages',
-  },
-  {
     title: 'Contact',
     href: '/contact',
     icon: <ContactIcon size={iconSize} />,
@@ -118,5 +109,3 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     type: 'Link',
   },
 ];
-
-
