@@ -2,6 +2,22 @@ import { CareerProps } from '../types/careers';
 
 export const CAREERS: CareerProps[] = [
   {
+    position: 'Software Engineer Intern',
+    company: 'SPASHTA Inc.',
+    logo: '/images/careers/spashta.png',
+    location: 'Seattle, WA 🇺🇸',
+    location_type: 'Remote',
+    type: 'Internship',
+    start_date: '2024-07',
+    end_date: '2024-08',
+    industry: 'machine-learning',
+    link: 'https://spashta.ai/',
+    responsibilities: [
+      'Established virtual microphone and virtual speaker systems using Windows audio samples, WDK, and WSDK.',
+      'Used C++ & portaudio/rtaudio libraries to capture audio buffers from the virtual microphone & apply ml algorithms to analyze and process captured audio data.',
+    ],
+  },
+  {
     position: 'Software Developer Intern',
     company: '(INTL FCStone) StoneX Inc.',
     logo: '/images/careers/stonex.webp',
