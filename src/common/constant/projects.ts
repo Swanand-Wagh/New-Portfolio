@@ -8,8 +8,8 @@ export const PROJECTSLIST: ProjectsProps = {
       description:
         'AI-powered knowledge testing platform with interactive dialogue, personalized testing, and deep learning experiences for students.',
       image: '/images/projects/socraitive.jpg',
-      link_demo: 'https://uwb-hacks.vercel.app/',
-      link_github: 'https://github.com/trollLemon/UWBhacksAI2024',
+      link_demo: 'https://devpost.com/software/socriative',
+      link_github: '#',
       stacks: [
         'React.js',
         'Vite',
