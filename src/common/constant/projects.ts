@@ -7,7 +7,7 @@ export const PROJECTSLIST: ProjectsProps = {
       slug: 'socraitive',
       description:
         'AI-powered knowledge testing platform with interactive dialogue, personalized testing, and deep learning experiences for students.',
-      image: '/images/projects/socraitive.jpg',
+      image: '/images/projects/socraitive.png',
       link_demo: 'https://devpost.com/software/socriative',
       link_github: '#',
       stacks: [
