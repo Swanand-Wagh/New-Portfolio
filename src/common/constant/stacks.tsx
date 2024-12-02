@@ -1,5 +1,5 @@
-import { BsFillBootstrapFill } from 'react-icons/bs';
 import { FaJava } from 'react-icons/fa';
+import { BsFillBootstrapFill } from 'react-icons/bs';
 import {
   SiCss3,
   SiFirebase,
@@ -33,7 +33,9 @@ import {
   SiCsharp,
   SiIpfs,
   SiOpenai,
+  SiShadcnui,
 } from 'react-icons/si';
+import { TbBrandAuth0 } from 'react-icons/tb';
 
 export type stacksProps = {
   [key: string]: JSX.Element;
@@ -42,6 +44,8 @@ export type stacksProps = {
 const iconSize = 24;
 
 export const STACKS: stacksProps = {
+  ShadCN: <SiShadcnui size={iconSize} className='text-blue-500' />,
+  AuthJS: <TbBrandAuth0 size={iconSize} className='text-purple-500' />,
   OpenAI: <SiOpenai size={iconSize} className='text-black-600' />,
   Spring: <SiSpring size={iconSize} className='text-green-600' />,
   IPFS: <SiIpfs size={iconSize} className='text-teal-400' />,
