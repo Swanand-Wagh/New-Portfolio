@@ -3,10 +3,10 @@ import { ProjectsProps, ProjectItemProps } from '../types/projects';
 export const PROJECTSLIST: ProjectsProps = {
   projects: [
     {
-      title: 'Socraitive - Smart AI Interviewer',
+      title: 'Socraitive - Smart AI Therapist',
       slug: 'socraitive',
       description:
-        'AI Interview system having voice activity detection (VAD) for personalized assessments and seamless conversations.',
+        'AI Therapy System having voice activity detection (VAD) for personalized care and seamless conversations.',
       image: '/images/projects/socraitive.png',
       link_demo: 'https://github.com/Swanand-Wagh/Socraitive',
       link_github: '#',
