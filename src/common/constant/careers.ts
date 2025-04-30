@@ -2,6 +2,22 @@ import { CareerProps } from '../types/careers';
 
 export const CAREERS: CareerProps[] = [
   {
+    position: 'Software Engineer',
+    company: 'Spatium Lab LLC',
+    logo: '/images/careers/spatium_lab.png',
+    location: 'Bellevue, WA 🇺🇸',
+    location_type: 'Remote',
+    type: 'Contract',
+    start_date: '2025-04',
+    end_date: '2025-06',
+    industry: 'space-tech',
+    link: 'https://www.spatiumlab.com/',
+    responsibilities: [
+      'Used FastAPI & Next.js to implement different joint/flange type of calculators used by Space companies',
+      'Created a scalable, multi-tenant architecture to support an end-to-end SaaS platform',
+    ],
+  },
+  {
     position: 'Software Engineer Intern',
     company: 'SPASHTA Inc.',
     logo: '/images/careers/spashta.png',
@@ -13,8 +29,9 @@ export const CAREERS: CareerProps[] = [
     industry: 'machine-learning',
     link: 'https://spashta.ai/',
     responsibilities: [
-      'Established virtual microphone and virtual speaker systems using Windows audio samples, WDK, and WSDK.',
-      'Used C++ & portaudio/rtaudio libraries to capture audio buffers from the virtual microphone & apply ml algorithms to analyze and process captured audio data.',
+      'Established virtual microphone and speaker systems using WDK, and SysVAD to simulate physical hardware.',
+      'Used C++ rtAudio library for realtime audio streaming & portAudio to capture audio-buffers from virtual microphone/speaker to pass onto ML pipeline.',
+      'Implemented WebRTC Noise Suppression, VAD to filter out silence and accent conversion through the ML pipeline.',
     ],
   },
   {
@@ -38,7 +55,7 @@ export const CAREERS: CareerProps[] = [
   {
     position: 'Web Developer Intern',
     company: 'FairShare IT Services',
-    logo: '/images/careers/fairshare.jpg',
+    logo: '/images/careers/fairshare.png',
     location: 'Pune, India 🇮🇳',
     location_type: 'Remote',
     type: 'Internship',
