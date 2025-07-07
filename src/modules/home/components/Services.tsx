@@ -22,7 +22,8 @@ const Services = () => {
           <h3 className='text-xl font-medium'>Lets work together!</h3>
         </div>
         <p className='leading-[1.8] md:leading-loose text-neutral-800 dark:text-neutral-300 pl-2'>
-          I&apos;m seeking a Full-Stack Web Developer / Software Engineer Internship for Summer 2024. <br />
+          I&apos;m seeking a Software Engineer / Backend Engineer / Full Stack
+          Engineer roles. <br />
           Feel free to email me to see how I can contribute.
         </p>
         <Button
