@@ -16,7 +16,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
     <div
       className={clsx(
         'flex items-center lg:items-start gap-4 lg:gap-0.5 flex-grow lg:flex-col w-full',
-        expandMenu && 'flex-col !items-start'
+        expandMenu && 'flex-col !items-start',
       )}
     >
       <Image
@@ -26,6 +26,8 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
         height={expandMenu ? 80 : imageSize}
         rounded='rounded-full'
         className='lg:hover:scale-105'
+        priority
+        sizes='80px'
       />
       <div className='flex gap-2 items-center mt-1 lg:mt-4'>
         <Link href='/' passHref>

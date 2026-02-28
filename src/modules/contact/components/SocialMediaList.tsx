@@ -14,7 +14,7 @@ const SocialMediaList = () => {
           <Button
             className={clsx(
               'w-full md:w-1/5 flex justify-center items-center hover:scale-105 transition-all duration-300',
-              item?.className
+              item?.className,
             )}
             key={index}
             onClick={() => handleAction(item?.href)}

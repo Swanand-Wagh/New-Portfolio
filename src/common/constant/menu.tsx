@@ -28,6 +28,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
+    title: 'Dashboard',
+    href: '/dashboard',
+    icon: <DashboardIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Dashboard',
+    type: 'Pages',
+  },
+  {
     title: 'About',
     href: '/about',
     icon: <ProfileIcon size={iconSize} />,

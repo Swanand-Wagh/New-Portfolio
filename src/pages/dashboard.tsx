@@ -3,22 +3,22 @@ import { NextSeo } from 'next-seo';
 
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
-import About from '@/modules/about';
+import Dashboard from '@/modules/dashboard';
 
-const PAGE_TITLE = 'About';
+const PAGE_TITLE = 'Dashboard';
 const PAGE_DESCRIPTION =
-  'A short story of me, not important but seems better than nothing.';
+  'My personal dashboard, built with Next.js API routes deployed as serverless functions.';
 
-const AboutPage: NextPage = () => {
+const DashboardPage: NextPage = () => {
   return (
     <>
       <NextSeo title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
       <Container data-aos='fade-up'>
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
-        <About />
+        <Dashboard />
       </Container>
     </>
   );
 };
 
-export default AboutPage;
+export default DashboardPage;

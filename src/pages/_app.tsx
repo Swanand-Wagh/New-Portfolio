@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import type { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
-import { SessionProvider } from 'next-auth/react';
+import { DefaultSeo } from 'next-seo';
 import { ThemeProvider } from 'next-themes';
 import { useEffect } from 'react';
 
@@ -12,12 +12,14 @@ import '@/common/styles/globals.css';
 import Layout from '@/common/components/layouts';
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://swanandwagh.com';
+
 const ProgressBar = dynamic(
-  () => import('src/common/components/elements/ProgressBar'),
-  { ssr: false }
+  () => import('@/common/components/elements/ProgressBar'),
+  { ssr: false },
 );
 
-const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -37,14 +39,43 @@ const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
         `}
       </style>
 
-      <SessionProvider session={session}>
-        <ThemeProvider attribute='class' defaultTheme='dark'>
-          <Layout>
-            <ProgressBar />
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
-      </SessionProvider>
+      <DefaultSeo
+        defaultTitle='Swanand Wagh - Software Engineer'
+        titleTemplate='%s - Swanand Wagh'
+        description='Software Engineer building bold, ambitious products. Portfolio showcasing projects, career, and contributions.'
+        canonical={SITE_URL}
+        openGraph={{
+          type: 'website',
+          locale: 'en_US',
+          url: SITE_URL,
+          siteName: 'Swanand Wagh',
+          title: 'Swanand Wagh - Software Engineer',
+          description:
+            'Software Engineer building bold, ambitious products. Portfolio showcasing projects, career, and contributions.',
+          images: [
+            {
+              url: `${SITE_URL}/images/swanand.png`,
+              width: 400,
+              height: 400,
+              alt: 'Swanand Wagh',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@swanandwagh1208',
+          cardType: 'summary',
+        }}
+        additionalMetaTags={[
+          { name: 'author', content: 'Swanand Wagh' },
+        ]}
+      />
+
+      <ThemeProvider attribute='class' defaultTheme='dark'>
+        <Layout>
+          <ProgressBar />
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </>
   );
 };

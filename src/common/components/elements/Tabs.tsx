@@ -35,8 +35,8 @@ export const Tabs = ({ tabs }: TabsProps) => {
               index === 0
                 ? 'md:rounded-tl'
                 : index === tabs.length - 1
-                ? 'md:rounded-tr'
-                : ''
+                  ? 'md:rounded-tr'
+                  : ''
             }`}
             onClick={() => handleTabClick(index)}
           >

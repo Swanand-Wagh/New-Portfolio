@@ -2,11 +2,44 @@ import { CareerProps } from '../types/careers';
 
 export const CAREERS: CareerProps[] = [
   {
-    position: 'Software Engineer',
+    position: 'SWE',
+    company: 'Aprio Inc. dba Alex',
+    logo: '/images/careers/alex.png',
+    location: 'San Francisco, CA 🇺🇸',
+    location_type: 'In-Person',
+    type: 'Fulltime',
+    start_date: '2025-11',
+    end_date: null,
+    industry: 'ai-hiring',
+    link: 'https://alex.com/',
+    responsibilities: [
+      'Built Zoom + Recall.ai interview automation pipelines (OAuth, webhooks, transcript ingestion, media processing, cheating detection, fraud detection, etc) enabling real-time meeting capture and post-interview analytics.',
+      'Remediated security vulnerabilities (IDOR, unauthenticated data exposure, NoSQL injection, path disclosure, etc) while implementing observability with Datadog (RUM, APM tracing, Logging, Monitors & Alerts).',
+    ],
+  },
+  {
+    position: 'SWE Intern',
+    company: 'Abby Intelligence Inc.',
+    logo: '/images/careers/abby.png',
+    location: 'Hollywood, CA 🇺🇸',
+    location_type: 'In-Person',
+    type: 'Internship',
+    start_date: '2025-07',
+    end_date: '2025-11',
+    industry: 'psychology-ai',
+    link: 'https://abby.gg/',
+    responsibilities: [
+      'Built a crisis-agent with agents/sdk to assess crisis severity and trigger actions (e.g., emergency contact, account block, refunds, therapist alerts).',
+      'Designed a multi-agent orchestration system for collaborative mental-health support across specialized agents.',
+      'Implemented streaming with socket.io and mem0 for memory management for context-aware responses.',
+    ],
+  },
+  {
+    position: 'SWE Intern',
     company: 'Spatium Lab LLC',
     logo: '/images/careers/spatium_lab.png',
     location: 'Bellevue, WA 🇺🇸',
-    location_type: 'Remote',
+    location_type: 'In-Person',
     type: 'Contract',
     start_date: '2025-04',
     end_date: '2025-06',
@@ -18,7 +51,7 @@ export const CAREERS: CareerProps[] = [
     ],
   },
   {
-    position: 'Software Engineer Intern',
+    position: 'SWE Intern',
     company: 'SPASHTA Inc.',
     logo: '/images/careers/spashta.png',
     location: 'Seattle, WA 🇺🇸',
@@ -35,7 +68,7 @@ export const CAREERS: CareerProps[] = [
     ],
   },
   {
-    position: 'Software Developer Intern',
+    position: 'SWE Intern',
     company: '(INTL FCStone) StoneX Inc.',
     logo: '/images/careers/stonex.webp',
     location: 'Pune, India 🇮🇳',
@@ -53,7 +86,7 @@ export const CAREERS: CareerProps[] = [
     ],
   },
   {
-    position: 'Web Developer Intern',
+    position: 'SWE Intern',
     company: 'FairShare IT Services',
     logo: '/images/careers/fairshare.png',
     location: 'Pune, India 🇮🇳',

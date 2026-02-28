@@ -1,49 +1,15 @@
 import { Head, Html, Main, NextScript } from 'next/document';
 
+import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
+
 export default function Document() {
   return (
-    <Html lang='en'>
+    <Html
+      lang='en'
+      className={`${jakartaSans.variable} ${soraSans.variable} ${firaCode.variable}`}
+    >
       <Head>
-        <link
-          rel='apple-touch-icon'
-          sizes='57x57'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='60x60'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='72x72'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='76x76'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='114x114'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='120x120'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='144x144'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='apple-touch-icon'
-          sizes='152x152'
-          href='/favicon/swanand.png'
-        />
+        <meta name='theme-color' content='#1a1a1a' />
         <link
           rel='apple-touch-icon'
           sizes='180x180'
@@ -52,19 +18,7 @@ export default function Document() {
         <link
           rel='icon'
           type='image/png'
-          sizes='192x192'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
           sizes='32x32'
-          href='/favicon/swanand.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='96x96'
           href='/favicon/swanand.png'
         />
         <link

@@ -12,19 +12,12 @@ const Introduction = () => {
               Born in Pune, India <span className='ml-1'>🇮🇳</span>
             </li>
             <li>
-              Currently staying in Seattle, Washington
+              Currently staying in SFO, California
               <span className='ml-1.5'>🇺🇸</span>
             </li>
           </ul>
         </div>
       </div>
-
-      <p className='leading-[1.8] md:leading-loose mt-6 text-neutral-800 dark:text-neutral-300'>
-        Seasoned Software Engineer especially in Frontend side, with a passion
-        for creating pixel-perfect web experiences. I work with JavaScript and
-        specialize in all-things web. I thrive on collaborating with teams to
-        deliver efficient, scalable, and visually appealing web applications.
-      </p>
     </section>
   );
 };

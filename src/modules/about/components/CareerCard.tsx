@@ -24,22 +24,21 @@ const CareerCard = ({
   const [isShowResponsibility, setIsShowResponsibility] =
     useState<boolean>(false);
 
-  const startDateFormatted = format(new Date(start_date), 'MMM yyyy');
+  const parseDate = (date: string) => {
+    const [year, month] = date.split('-').map(Number);
+    return new Date(year, month - 1);
+  };
+
+  const startDateFormatted = format(parseDate(start_date), 'MMM yyyy');
   const endDateFormatted = end_date
-    ? format(new Date(end_date), 'MMM yyyy')
+    ? format(parseDate(end_date), 'MMM yyyy')
     : 'Present';
 
-  const durationYears = differenceInYears(
-    new Date(end_date || Date.now()),
-    new Date(start_date)
-  );
+  const endDateParsed = end_date ? parseDate(end_date) : new Date();
+
+  const durationYears = differenceInYears(endDateParsed, parseDate(start_date));
   const durationMonths =
-    (differenceInMonths(
-      new Date(end_date || Date.now()),
-      new Date(start_date)
-    ) %
-      12) +
-    1;
+    (differenceInMonths(endDateParsed, parseDate(start_date)) % 12) + 1;
 
   const durationText = `${
     durationYears > 0
