@@ -21,7 +21,10 @@ const ContributionOverview = ({ data }: ContributionOverviewProps) => {
   const today = new Date();
   const startOfWeek = new Date(today);
   startOfWeek.setDate(today.getDate() - today.getDay());
-  const startOfWeekStr = startOfWeek.toISOString().split('T')[0];
+  const y = startOfWeek.getFullYear();
+  const m = String(startOfWeek.getMonth() + 1).padStart(2, '0');
+  const d = String(startOfWeek.getDate()).padStart(2, '0');
+  const startOfWeekStr = `${y}-${m}-${d}`;
 
   const thisWeekContributions = allDays
     .filter((day) => day.date >= startOfWeekStr)
