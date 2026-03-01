@@ -3,7 +3,7 @@ import { CareerProps } from '../types/careers';
 export const CAREERS: CareerProps[] = [
   {
     position: 'SWE',
-    company: 'Aprio Inc. dba Alex',
+    company: 'Apriora Inc. dba Alex',
     logo: '/images/careers/alex.png',
     location: 'San Francisco, CA 🇺🇸',
     location_type: 'In-Person',
