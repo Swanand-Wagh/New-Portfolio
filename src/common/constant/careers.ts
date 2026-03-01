@@ -57,8 +57,8 @@ export const CAREERS: CareerProps[] = [
     location: 'Seattle, WA 🇺🇸',
     location_type: 'Remote',
     type: 'Internship',
-    start_date: '2024-07',
-    end_date: '2024-08',
+    start_date: '2024-06',
+    end_date: '2024-07',
     industry: 'machine-learning',
     link: 'https://spashta.ai/',
     responsibilities: [
@@ -74,8 +74,8 @@ export const CAREERS: CareerProps[] = [
     location: 'Pune, India 🇮🇳',
     location_type: 'Hybrid',
     type: 'Internship',
-    start_date: '2023-02',
-    end_date: '2023-08',
+    start_date: '2023-01',
+    end_date: '2023-07',
     industry: 'payments',
     link: 'https://www.stonex.com/',
     responsibilities: [
@@ -92,8 +92,8 @@ export const CAREERS: CareerProps[] = [
     location: 'Pune, India 🇮🇳',
     location_type: 'Remote',
     type: 'Internship',
-    start_date: '2021-09',
-    end_date: '2021-12',
+    start_date: '2021-08',
+    end_date: '2021-11',
     industry: 'software',
     link: 'https://sirka.io',
     responsibilities: [
