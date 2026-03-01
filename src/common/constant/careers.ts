@@ -95,7 +95,7 @@ export const CAREERS: CareerProps[] = [
     start_date: '2021-08',
     end_date: '2021-11',
     industry: 'software',
-    link: 'https://sirka.io',
+    link: 'https://fairshare.tech/',
     responsibilities: [
       'Created an eCommerce platform for street grocery vendors using React.js and Firebase',
       'Engineered essential features including cart management, secure payment gateway, menus, and user profiles',
