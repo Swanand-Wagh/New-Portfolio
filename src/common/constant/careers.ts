@@ -3,18 +3,31 @@ import { CareerProps } from '../types/careers';
 export const CAREERS: CareerProps[] = [
   {
     position: 'SWE',
+    company: 'Stuut Technologies Inc.',
+    logo: '/images/careers/stuut.png',
+    location: 'San Francisco, CA 🇺🇸',
+    location_type: 'In-Person',
+    type: 'Fulltime',
+    start_date: '2026-06',
+    end_date: null,
+    industry: 'ai-finance',
+    link: 'https://stuut.ai/',
+    responsibilities: [], // JUST STARTED WORKING HERE TODAY, NO RESPONSIBILITIES YET
+  },
+  {
+    position: 'SWE',
     company: 'Apriora Inc. dba Alex',
     logo: '/images/careers/alex.png',
     location: 'San Francisco, CA 🇺🇸',
     location_type: 'In-Person',
     type: 'Fulltime',
     start_date: '2025-11',
-    end_date: null,
+    end_date: '2026-05',
     industry: 'ai-hiring',
     link: 'https://alex.com/',
     responsibilities: [
       'Built Zoom + Recall.ai interview automation pipelines (OAuth, webhooks, transcript ingestion, media processing, cheating detection, fraud detection, etc) enabling real-time meeting capture and post-interview analytics.',
-      'Remediated security vulnerabilities (IDOR, unauthenticated data exposure, NoSQL injection, path disclosure, etc) while implementing observability with Datadog (RUM, APM tracing, Logging, Monitors & Alerts).',
+      'Remediated security vulnerabilities (IDOR, unauthenticated data exposure, NoSQL injection, path disclosure, etc) while implementing observability with Datadog (RUM, APM tracing, Logging, Synthetics, Monitors & Alerts).',
     ],
   },
   {
