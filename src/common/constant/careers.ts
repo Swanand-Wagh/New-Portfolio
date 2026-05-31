@@ -33,7 +33,7 @@ export const CAREERS: CareerProps[] = [
   {
     position: 'SWE Intern',
     company: 'Abby Intelligence Inc.',
-    logo: '/images/careers/abby.png',
+    logo: '/images/careers/abby.jpeg',
     location: 'Hollywood, CA 🇺🇸',
     location_type: 'In-Person',
     type: 'Internship',
