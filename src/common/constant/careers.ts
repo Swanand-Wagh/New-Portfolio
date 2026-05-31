@@ -50,7 +50,7 @@ export const CAREERS: CareerProps[] = [
   {
     position: 'SWE Intern',
     company: 'Spatium Lab LLC',
-    logo: '/images/careers/spatium_lab.png',
+    logo: '/images/careers/spatium_lab.jpeg',
     location: 'Bellevue, WA 🇺🇸',
     location_type: 'In-Person',
     type: 'Contract',
@@ -83,7 +83,7 @@ export const CAREERS: CareerProps[] = [
   {
     position: 'SWE Intern',
     company: '(INTL FCStone) StoneX Inc.',
-    logo: '/images/careers/stonex.webp',
+    logo: '/images/careers/stonex.jpeg',
     location: 'Pune, India 🇮🇳',
     location_type: 'Hybrid',
     type: 'Internship',
@@ -101,7 +101,7 @@ export const CAREERS: CareerProps[] = [
   {
     position: 'SWE Intern',
     company: 'FairShare IT Services',
-    logo: '/images/careers/fairshare.png',
+    logo: '/images/careers/fairshare.jpeg',
     location: 'Pune, India 🇮🇳',
     location_type: 'Remote',
     type: 'Internship',
