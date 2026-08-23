@@ -18,10 +18,15 @@ export default async function handler(
 
   const response = await getGithubUser(type);
 
+  if (response.error) {
+    console.error(`[api/github] ${response.status}: ${response.error}`);
+    return res.status(response.status).json({ error: response.error });
+  }
+
   res.setHeader(
     'Cache-Control',
     'public, s-maxage=60, stale-while-revalidate=30',
   );
 
-  return res.status(response.status).json(response.data);
+  return res.status(200).json(response.data);
 }
