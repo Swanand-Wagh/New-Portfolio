@@ -9,6 +9,7 @@ import {
 import {
   FiCoffee as ProjectIcon,
   FiCpu as DashboardIcon,
+  FiEdit as BlogIcon,
   FiPocket as HomeIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';
@@ -34,6 +35,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Dashboard',
+    type: 'Pages',
+  },
+  {
+    title: 'Blogs',
+    href: '/blogs',
+    icon: <BlogIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Blogs',
     type: 'Pages',
   },
   {
