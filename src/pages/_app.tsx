@@ -12,7 +12,7 @@ import '@/common/styles/globals.css';
 import Layout from '@/common/components/layouts';
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://swanandwagh.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://swanandwagh.me';
 
 const ProgressBar = dynamic(
   () => import('@/common/components/elements/ProgressBar'),

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://swanandwagh.com
+Host: https://swanandwagh.me
 
 # Sitemaps
-Sitemap: https://swanandwagh.com/sitemap.xml
+Sitemap: https://swanandwagh.me/sitemap.xml
